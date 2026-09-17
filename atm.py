@@ -1,11 +1,11 @@
 # Simple ATM Program
 
-# STEP 1: Set up variables
+#Set up variables
 pin = 1234
 balance = 100000
 attempts = 0
 
-# STEP 2: Ask for the PIN
+#Ask for the PIN
 while attempts < 3:
     entered_pin = int(input("Enter your PIN: "))
 
@@ -22,7 +22,7 @@ if attempts == 3:
     print("Card blocked!")
 else:
 
-    # STEP 3: Continuous ATM menu
+   #Continuous ATM menu
     while True:
         print("\n===== ATM MENU =====")
         print("1. Check Balance")
@@ -32,13 +32,13 @@ else:
 
         choice = input("Choose an option (1-4): ")
 
-        # STEP 4: Handle menu choices
+        #Handle menu choices
 
         # Check balance
         if choice == "1":
             print(f"Your current balance is: {balance}")
 
-        # STEP 5: Deposit
+        #Deposit
         elif choice == "2":
             amount = float(input("Enter amount to deposit: "))
 
@@ -49,7 +49,7 @@ else:
             else:
                 print("Error: Deposit amount must be greater than zero.")
 
-        # STEP 5: Withdraw
+        #Withdraw
         elif choice == "3":
             amount = float(input("Enter amount to withdraw: "))
 
